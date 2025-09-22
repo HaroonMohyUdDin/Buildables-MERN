@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <section class="left">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          
+            <span class="checkmark">✓</span>
+            Product discovery and building what matters
+        
+            <span class="checkmark">✓</span>
+            Measuring to ensure updates are a success
+       
+        
+            <span class="checkmark">✓</span>
+            And much more!
+      
+        </ul>
+
+        <form id="signup-form">
+          <div class="input-group">
+            <div class="label-row">
+              <label for="email">Email address</label>
+              <span id="error" class="error-message"></span>
+            </div>
+            <input type="email" id="email" placeholder="email@company.com" required />
+          </div>
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+
+      <section class="right">
+        <div class="illustration">
+          <div class="browser-window">
+            <div class="browser-header">
+              <div class="browser-dots">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+            <div class="browser-content">
+              <div class="chart-line"></div>
+              <div class="chart-bars"></div>
+            </div>
+          </div>
+          <div class="score-badge">94</div>
+        </div>
+      </section>
+    </div>
+
+   
+    <div id="success-modal" class="modal">
+      <div class="modal-content">
+        <div class="success-icon">✓</div>
+        <h2>Thanks for subscribing!</h2>
+        <p>A confirmation email has been sent to <span id="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+        <button id="dismiss-btn">Dismiss message</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
